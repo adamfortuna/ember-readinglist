@@ -220,11 +220,12 @@ App.Book.FIXTURES = [
     title: 'An Appetite for Wonder: The Making of a Scientist',
     author: 'Richard Dawkins',
     started_at: new Date('10/27/2013'),
-    finished_at: new Date('10/31/2013'),
-    rating: 0,
+    finished_at: new Date('11/03/2013'),
+    rating: 1,
     genres: [102],
     amazon_id: '0062225790',
-    isAudiobook: true
+    isAudiobook: true,
+    review: "Being an amazing writer on religion led me to reading everything Dawkins has written. This biography details his life ansd inspiration that drove him towards a life in science. Interesting subject, but reading about years in boarding school and all about academia wasn't that interesting to me. His background in coding was the most interesting part, but covered quickly."
   },
   {
     id: 10,
@@ -443,6 +444,18 @@ App.Book.FIXTURES = [
     genres: [104],
     review: "Fight Club is my favorite movie. The book was all over the place — like the movie. Somehow the format fit the screen better for me.",
     amazon_id: '0393327345',
+    isAudiobook: true
+  },
+  {
+    id: 29,
+    title: 'I, Robot',
+    author: 'Isaac Asimov',
+    started_at: new Date('11/03/2013'),
+    finished_at: new Date('11/08/2013'),
+    rating: 5,
+    genres: [100],
+    review: "Reading this reminded me of <a href='http://thedailywtf.com/'>The Daily WTF</a> where a weird problem is presented, and eventually solved. That's much of the format of this series of short stories. The movie is a combination of various parts of these 9 stores, which are considered the beginning of Asimovs Robot/Empire/Foundation series.",
+    amazon_id: '0553294385',
     isAudiobook: true
   }
 ]
