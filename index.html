@@ -50,35 +50,41 @@
   <script type='text/x-handlebars' data-template-name='genres'>
   <h2>Filters</h2>
   <ul class='list-unstyled'>
-    <li>{{#link-to 'index' classNames="label label-default"}}All Books{{/link-to}}</li>
-    <li>{{#link-to 'index' classNames="label label-default"}}Read in 2013{{/link-to}}</li>
+    <li id='filter-all'>{{#link-to 'index' classNames="label label-default"}}All Books{{/link-to}}</li>
+    <li id='filter-read-in-2013'>{{#link-to 'index' classNames="label label-default"}}Read in 2013{{/link-to}}</li>
   </ul>
 
-  <h2>Genres</h2>
-  <ul class='list-unstyled'>
-    {{#each}}
-      <li>
-        {{#link-to 'genre' this classNames="label label-primary"}}
-          {{name}}
-        {{/link-to}}
-      </li>
-    {{/each}}
+  <div id='filter-genres'>
+    <h2>Genres</h2>
+    <ul class='list-unstyled'>
+      {{#each}}
+        <li>
+          {{#link-to 'genre' this classNames="label label-primary"}}
+            {{name}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </div>
   </div>
 
-  <h2>Rating</h2>
-  <ul class='list-unstyled'>
-    <li>{{#link-to 'index' classNames="label label-success"}}5{{/link-to}}</li>
-    <li>{{#link-to 'index' classNames="label label-success"}}4+{{/link-to}}</li>
-    <li>{{#link-to 'index' classNames="label label-success"}}3+{{/link-to}}</li>
-    <li>{{#link-to 'index' classNames="label label-success"}}2+{{/link-to}}</li>
-    <li>{{#link-to 'index' classNames="label label-success"}}1+{{/link-to}}</li>
-  </ul>
+  <div id='filter-ratings'>
+    <h2>Rating</h2>
+    <ul class='list-unstyled'>
+      <li>{{#link-to 'index' classNames="label label-success"}}5{{/link-to}}</li>
+      <li>{{#link-to 'index' classNames="label label-success"}}4+{{/link-to}}</li>
+      <li>{{#link-to 'index' classNames="label label-success"}}3+{{/link-to}}</li>
+      <li>{{#link-to 'index' classNames="label label-success"}}2+{{/link-to}}</li>
+      <li>{{#link-to 'index' classNames="label label-success"}}1+{{/link-to}}</li>
+    </ul>
+  </div>
 
-  <h2>Format</h2>
-  <ul class='list-unstyled'>
-    <li>{{#link-to 'index' classNames="label label-info"}}Audiobook{{/link-to}}</li>
-    <li>{{#link-to 'index' classNames="label label-info"}}Book{{/link-to}}</li>
-  </ul>
+  <div id='filter-format'>
+    <h2>Format</h2>
+    <ul class='list-unstyled'>
+      <li>{{#link-to 'index' classNames="label label-info"}}Audiobook{{/link-to}}</li>
+      <li>{{#link-to 'index' classNames="label label-info"}}Book{{/link-to}}</li>
+    </ul>
+  </div>
   </script>
 
   <script type='text/x-handlebars' data-template-name='components/book-item'>
@@ -120,5 +126,6 @@
   <script src="js/libs/ember-data.js"></script>
   <script src="js/libs/moment.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/books.js"></script>
 </body>
 </html>

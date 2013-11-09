@@ -40,3 +40,10 @@ body {
 .book.rating-2 .rating, .book.rating-1 .rating {
   color: #d9534f;
 }
+
+
+#filter-format, #filter-ratings {
+  display: none;
+}
+
+#filter-read-in-2013 { display: none; }
